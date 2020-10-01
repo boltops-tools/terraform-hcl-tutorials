@@ -2,12 +2,12 @@ require "json"
 
 def terraform_apply
   length = 2
-  resource("random_pet", "this", length: length) # returns pet output
+  pet = resource("random_pet", "this", length: length) # returns pet output
+  output("pet", pet)
 end
 
 def resource(type, name, attrs={})
-  pet = resource_mock(type, name, attrs)
-  output("pet", pet)
+  resource_mock(type, name, attrs)
 end
 
 def output(name, value)
