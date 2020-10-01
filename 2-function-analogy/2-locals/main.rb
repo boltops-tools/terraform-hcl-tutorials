@@ -2,7 +2,7 @@ require "json"
 
 def terraform_apply
   length = 2
-  pet = resource("random_pet", "this", length: length) # returns pet output
+  pet = resource("random_pet", "this", length: length)
   output("pet", pet)
 end
 
