@@ -1,6 +1,6 @@
 # Terraform Introduction: Function Analogy
 
-This is repo contains the source code for the blog post: [Terraform Intro 2: Function Analogy]().
+This is repo contains the source code for the blog post: [Terraform HCL Intro 2: Function Analogy](https://blog.boltops.com/2020/10/02/terraform-hcl-function-analogy).
 
 ## Terraform Apply
 
