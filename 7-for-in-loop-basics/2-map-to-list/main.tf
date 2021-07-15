@@ -5,5 +5,5 @@ output "result1" {
   value = [for k,v in local.map : "${k}-${v}" ]
 }
 output "result2" {
-  value = [for k in local.map : k ]
+  value = [for v in local.map : v ]
 }

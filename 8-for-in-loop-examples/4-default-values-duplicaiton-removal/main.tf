@@ -21,7 +21,18 @@ variable "rules" {
       from_port        = 80
       cidr_blocks      = ["10.1.0.0/16"]
     }]
-    example1 = [] # empty Array removes rules
+    example1 = [] # empty List removes rules
+    # example1 = [{
+    #   description      = "rule description 2"
+    #   to_port          = 80
+    #   from_port        = 80
+    #   cidr_blocks      = ["10.2.0.0/16"]
+    # },{
+    #   description      = "rule description 3"
+    #   to_port          = 80
+    #   from_port        = 80
+    #   cidr_blocks      = ["10.3.0.0/16"]
+    # }]
   }
 }
 locals {

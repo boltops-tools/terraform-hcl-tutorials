@@ -1,4 +1,4 @@
 variable "length" {
   type    = number
-  default = 2
+  default = 3
 }

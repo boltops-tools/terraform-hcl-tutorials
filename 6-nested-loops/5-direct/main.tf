@@ -30,7 +30,7 @@ locals {
       security_groups  = null
       self             = null
     }]
-    example1 = [] # empty List removes previous rules, uncomment this line and comment below to test
+    # example1 = [] # empty List removes previous rules, uncomment this line and comment below to test
     # example1 = [{
     #   description      = "rule description 0"
     #   to_port          = 80

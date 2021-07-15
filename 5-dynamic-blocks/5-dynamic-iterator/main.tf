@@ -12,8 +12,8 @@ locals {
   }
 }
 resource "aws_security_group" "map" {
-  name        = "demo-map"
-  description = "demo-map"
+  name        = "demo-map-each"
+  description = "demo-map-each"
 
   dynamic "ingress" {
     for_each = local.map

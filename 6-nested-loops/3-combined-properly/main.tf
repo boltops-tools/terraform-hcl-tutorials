@@ -14,18 +14,21 @@ locals {
     },
     example1 = {
       description = "sg description 1"
-      rules = [{
-        description = "rule description 0"
-        port = 80
-        cidr_blocks = ["10.2.0.0/16"]
-      },{
-        description = "rule description 1"
-        port = 81
-        cidr_blocks = ["10.3.0.0/16"]
-      }]
+      # rules = [{
+      #   description = "rule description 0"
+      #   port = 80
+      #   cidr_blocks = ["10.2.0.0/16"]
+      # },{
+      #   description = "rule description 1"
+      #   port = 81
+      #   cidr_blocks = ["10.3.0.0/16"]
+      # }]
     }
   }
 }
+
+# keys => ["description", "rules"]
+# contains(["description", "rules"], "rules")
 resource "aws_security_group" "this" {
   for_each    = local.groups
 
